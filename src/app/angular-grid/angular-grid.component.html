@@ -1,0 +1,20 @@
+<div class="p-2 home-container">
+  <div class="row mt-5">
+    <div class="col-12 cursor-pointer">
+      <ag-grid-angular
+        [style]="styleObj"
+        class="ag-theme-alpine"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs"
+        (cellClicked)="onCellClicked($event)"
+        [gridOptions]="gridOptions"
+      >
+      </ag-grid-angular>
+    </div>
+  </div>
+  <ng-container *ngIf="mapImage">
+    <div class="row justify-center mt-5">
+      <app-map-image [imgData]="mapImage"></app-map-image>
+    </div>
+  </ng-container>
+</div>

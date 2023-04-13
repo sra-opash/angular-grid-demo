@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="row justify-content-around">
+        <div class="col-6" *ngIf="mapImgObj.property">
+            <h5 class="text-center">Address : {{mapImgObj.property}}</h5>
+            <img class="w-100" [src]="mapImgObj.img" alt="">
+        </div>
+    </div>
+</div>
